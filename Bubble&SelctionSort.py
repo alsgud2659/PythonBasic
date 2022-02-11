@@ -1,5 +1,3 @@
-import secrets
-
 # 버블정렬
 
 def bubbleSort(arr):                                           

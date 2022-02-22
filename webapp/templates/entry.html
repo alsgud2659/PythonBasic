@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/search4'>
+<table>
+<p>찾기 원하는 구문과 찾을 글자를 입력하세요:</p>
+<tr><td>구문:</td><td><input name='phrase' type='TEXT' width='40'></td></tr>
+<tr><td>글자:</td><td><input name='letters' type='TEXT' value='aeiou'></td></tr>
+</table>
+<p>준비가 되었으면 아래 버튼을 클릭하세요:</p>
+<p><input value='찾기!' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
